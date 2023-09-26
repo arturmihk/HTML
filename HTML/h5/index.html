@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Harjutus 6</h1>
+    
+    <form>
+        <label for="kasutajanimi">Kasutajanimi:</label>
+        <input id="kasutajanimi" name="Kasutajanimi" type="text" list="minu_valik" size="6">
+    </form>
+    
+    <form>
+        <label for="kursus">Kursus:</label>
+        <input id="kursus" name="Kursus" type="text" list="minu_valik" size="4">
+    </form>
+    
+    <form>
+        <label for="osakond">Osakonna number:</label>
+        <input id="osakond" type="number" value="1" min="1" max="5" step="1">
+    </form>
+    
+    <form>
+        <label for="parool">Parool:</label>
+        <input id="parool" name="Parool" type="password" size="6">
+    </form>
+    
+    <form>
+        <label for="teenus">Vali teenus</label>
+        <select id="teenus">
+            <option value="">-Vali teenus-</option>
+            <option value="1">Odav 0,59€</option>
+            <option value="2">Tavaline 2€</option>
+            <option value="3">Delux 102€</option>
+        </select>
+    </form>
+    
+    <form>
+        <label>Roll:</label>
+        <input type="radio" id="admin" name="varv" value="Ad">
+        <label for="admin">Admin</label><br>
+        
+        <input type="radio" id="moderaator" name="varv" value="Mod">
+        <label for="moderaator">Moderaator</label><br>
+        
+        <input type="radio" id="user" name="varv" value="Usr">
+        <label for="user">User</label><br>
+    </form>
+    
+    <form>
+        <label>
+            <input type="checkbox" name="nous" value="nous"> Nõustun tingimustega
+        </label><br>
+    </form>
+    
+    <form>
+        <label for="enesetutvustus">Enesetutvustus:</label>
+        <textarea id="enesetutvustus" rows="20" cols="50"></textarea><br>
+        <input type="submit" value="Salvesta">
+    </form>
+</body>
+</html>
